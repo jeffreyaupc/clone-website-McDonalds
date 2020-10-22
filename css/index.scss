@@ -1,0 +1,884 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// body {
+//   max-width: 1200px;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+// }
+
+/**************************************/
+/*************** Header ***************/
+/**************************************/
+
+.header-container {
+  max-width: 1200px;
+  // max-width: 73.125rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  display: flex;
+}
+
+.twobars {
+  width: 100%;
+}
+
+.header-firstbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.25rem;
+}
+
+.mc-img img {
+  width: 100px;
+  margin-right: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+/*************** first bar left list ***************/
+
+.firstbar-left a {
+  margin: 0 1rem;
+}
+
+.firstbar-left ul {
+  display: flex;
+}
+
+.firstbar-left li {
+  margin: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.firstbar-left li a {
+  text-decoration: none;
+  color: black;
+}
+
+.media-btn {
+  display: none;
+}
+
+/*************** dropdown for Language button ***************/
+
+.drop-btn {
+  outline: none;
+  border: none;
+  background: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.lang-drop-content {
+  position: absolute;
+  display: none;
+  margin-top: 1rem;
+  margin-left: -1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1.5px solid grey;
+  background-color: white;
+  z-index: 1;
+}
+
+/*************** first bar right list ***************/
+
+.firstbar-right ul {
+  display: flex;
+}
+
+.firstbar-right li {
+  margin: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.firstbar-right li a {
+  text-decoration: none;
+  color: black;
+}
+
+.location-change a {
+  margin-left: -1.5rem;
+}
+
+.firstbar-right .location-change a {
+  color: rgb(17, 143, 185);
+  text-decoration: underline;
+}
+
+.order-btn {
+  padding: 0 1.5rem;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/*************** second bar list ***************/
+
+.header-secondbar ul {
+  display: flex;
+  margin: 1.75rem;
+  font-size: 1.25rem;
+}
+
+.secondbar a {
+  margin-right: 2.75rem;
+  text-decoration: none;
+  color: black;
+}
+
+.secondbar .drop-btn {
+  margin-right: 2.75rem;
+}
+
+/*************** dropdown for Menu button ***************/
+
+#dropbtn-menu {
+  outline: none;
+  border: none;
+  background: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.menu-drop-content {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.75rem;
+  padding-top: 2.5rem;
+  z-index: 1;
+}
+
+.menu-drop-content img {
+  width: 75px;
+  height: 75px;
+}
+
+.menu-drop-content td {
+  box-sizing: border-box;
+  width: 33%;
+  padding: 0.5rem 2rem;
+}
+
+.menu-drop-content a {
+  font-size: 1rem;
+  display: flex;
+}
+
+.menu-item {
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-limited-menu {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.limited-menu {
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  border: 1.25px solid rgb(158, 158, 158);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+}
+
+/**************************************/
+/*************** Main ***************/
+/**************************************/
+
+.border {
+  border: 1px solid lightgray;
+}
+
+main {
+  max-width: 1200px;
+  // max-width: 73.125rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.img-container {
+  position: relative;
+  margin: 2.5rem auto;
+}
+
+.img-container img {
+  border-radius: 6px;
+  width: 1200px;
+}
+
+.img-info-container {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 35%;
+  height: 65%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.img-info-container h1 {
+  font-size: 2rem;
+}
+
+.img-info-container p {
+  font-size: 1rem;
+}
+
+.more-btn {
+  margin: 1.5rem 0rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.img-info-container small {
+  font-size: 0.75rem;
+  color: rgb(77, 77, 77);
+}
+
+.img-toggle {
+  margin-top: 1rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 0.75rem;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.btn-play {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+/*************** Cards ***************/
+
+.sec-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+.card-img {
+  width: 585px;
+  border-radius: 6px;
+}
+
+.cards {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+}
+
+.cards div {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards h1 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards button {
+  margin-top: 4rem;
+}
+
+.sec-three {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem auto;
+}
+
+/**************************************/
+/*************** Contact **************/
+/**************************************/
+
+.contact-header {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  max-width: 75%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+
+.contact-form input {
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1.25rem;
+  width: 90%;
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+.contact-form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  font-size: 1rem;
+}
+
+.contact-form img {
+  padding-top: 2rem;
+}
+
+.contact-form h2 {
+  padding: 1rem;
+}
+
+.contact-form p {
+  padding: 1rem;
+}
+
+.contact-form small {
+  padding: 1rem;
+}
+
+.contact-form form {
+  margin-top: 2rem;
+}
+
+.subscribe-btn {
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 102, 0);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.vsmall {
+  font-size: 0.75rem;
+}
+
+/**************************************/
+/*************** Footer ***************/
+/**************************************/
+
+footer {
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 20vh;
+}
+
+.footer-sec-one {
+  margin-top: 6rem;
+  border-bottom: 1px solid grey;
+}
+
+.plus-btn{
+  display: none;
+}
+
+.cols {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cols a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.rows {
+  margin-bottom: 0.5rem;
+}
+
+.row-1 {
+  margin-bottom: 1.5rem;
+}
+
+/*************** Social Media Icons ***************/
+
+.social-media {
+  margin: 2rem auto;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.media-icon {
+  font-size: 1.75rem;
+  color: black;
+}
+
+.media-left a {
+  margin-right: 1.5rem;
+}
+
+.media-right a {
+  margin-left: 1rem;
+}
+
+.media-right img {
+  border-radius: 6px;
+}
+
+/*************** Policy ***************/
+
+.footer-sec-two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.policy-left a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  margin-right: 2.5rem;
+}
+
+.policy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.policy-right img {
+  margin-right: 0.25rem;
+  border-radius: 6px;
+}
+
+.policy-right p {
+  font-size: 1.25rem;
+}
+
+/**************************************/
+/*********** Media @ 1200px ***********/
+/**************************************/
+
+/*************** Header ***************/
+
+@media (max-width: 1200px) {
+  .header-container {
+    margin: 0 auto;
+    padding: 0rem;
+  }
+
+  .mc-img {
+    width: 60px;
+    height: 57.4px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .mc-img img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header-firstbar {
+    height: 50px;
+    margin: 0;
+  }
+
+  .firstbar-left {
+    display: none;
+  }
+  .firstbar-right li {
+    display: none;
+  }
+  .header-secondbar {
+    display: none;
+  }
+
+  .firstbar-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .order-btn {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .border {
+    display: none;
+  }
+
+  /********** Menu Icon **********/
+
+  .media-btn {
+    position: absolute;
+    top: 0%;
+    left: 60px;
+    display: flex;
+    width: 55px;
+    height: 55px;
+  }
+
+  .media-btn {
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+/*************** Main ***************/
+
+@media (max-width: 1200px) {
+  main {
+    max-width: 1000px;
+  }
+
+  .img-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 100%;
+  }
+}
+
+/*************** Card ***************/
+
+@media (max-width: 1200px) {
+  .card-img {
+    width: 485px;
+  }
+}
+
+/*************** Contact ***************/
+
+@media (max-width: 1400px) {
+  .contact-form{
+    width: 480px;
+  }
+}
+
+/*************** Footer ***************/
+
+@media (max-width: 1400px) {
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/**************************************/
+/*********** Media @ 1024px ***********/
+/**************************************/
+
+/*************** Header ***************/
+
+@media (max-width: 1024px) {
+  .header-container {
+    margin: 0 auto;
+    padding: 0rem;
+  }
+
+  .mc-img {
+    width: 60px;
+    height: 57.4px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .mc-img img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header-firstbar {
+    height: 50px;
+    margin: 0;
+  }
+
+  .firstbar-left {
+    display: none;
+  }
+  .firstbar-right li {
+    display: none;
+  }
+  .header-secondbar {
+    display: none;
+  }
+
+  .firstbar-right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .order-btn {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .border {
+    display: none;
+  }
+
+  /********** Menu Icon **********/
+
+  .media-btn {
+    position: absolute;
+    top: 0%;
+    left: 60px;
+    display: flex;
+    width: 55px;
+    height: 55px;
+  }
+
+  .media-btn {
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+/*************** Main ***************/
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 768px;
+  }
+
+  .img-container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    margin: 0 0.3rem;
+  }
+  .img-container img {
+    width: 100%;
+  }
+  .img-info-container {
+    position: relative;
+    width: inherit;
+    left: 0%;
+    padding: 0.5rem;
+  }
+}
+
+/*************** Card ***************/
+
+@media (max-width: 1024px) {
+  .card-img {
+    width: 360px;
+  }
+
+  .cards {
+    margin: 0 0.3rem;
+  }
+}
+
+/*************** Footer ***************/
+
+@media (max-width: 1024px) {
+  footer {
+    max-width: 1024px;
+    margin: 0 1rem;
+  }
+  .col-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-5{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-6{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .plus-btn{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cols{
+    flex-direction: column;
+  }
+  .rows{
+    display: none;
+  }
+}
+
+/**************************************/
+/*********** Media @ 768px ************/
+/**************************************/
+
+/*************** Cards ***************/
+
+@media (max-width: 783px){
+  .sec-two, .sec-three{
+    flex-direction: column;
+  }
+
+  .cards{
+    width: 360px;
+    margin: 0.2rem auto;
+  }
+  .card-img{
+    width: 100%;
+  }
+}
+
+/*************** Contact ***************/
+
+@media (max-width: 768px) {
+  .contact-form{
+    width: 360px;
+  }
+}
+/*************** Footer ***************/
+
+@media (max-width: 768px){
+  footer{
+    max-width: 768px;
+  }
+  
+  .social-media{
+    flex-direction: column;
+  }
+  .media-left{
+    margin-bottom: 2rem;
+  }
+  
+}
+
+/*************** Policy ***************/
+
+@media (max-width: 783px){
+
+  .footer-sec-two{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+  }
+  
+  .policy-left {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .policy-left a{
+    font-size: 0.9rem;
+  }
+
+  .policy-right p{
+    font-size: 0.9rem;
+  }
+
+}
