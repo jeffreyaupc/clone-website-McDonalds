@@ -1,2 +1,2 @@
 # clone-website-McDonalds
-A clone website of McDonald's
+A responsive clone website of McDonald's
